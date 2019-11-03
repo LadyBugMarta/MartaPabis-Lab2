@@ -1,0 +1,55 @@
+body{
+    background-image: url(green_cup.png);
+}
+div{
+    background: rgb(235, 212, 164);
+    /* Background pattern from Toptal Subtle Patterns */
+    color: rgb(66, 66, 66);
+    margin: 10px 140px;
+    padding: 20px 50px;
+    
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    margin: 60px;
+    color: rgb(186, 40, 40);
+    text-align: center;
+    font-size: 28px;
+}
+h1:hover{
+    color: rgb(150, 20, 20);
+    text-decoration: underline;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: rgb(186, 40, 40);
+    font-size: 20px;
+    text-indent: 100px;
+}
+p::selection{ 
+    background: palevioletred;
+    color:white;
+}
+.submit{
+    color: whitesmoke;
+    background: rgb(186, 40, 40);
+    font-family: serif;
+    border-radius: 20px;
+    border: 2px solid rgb(150, 20, 20);
+    border-style: outset;
+    padding: 10px 0px;
+    width: 100px;
+    margin: 10px 2px;
+}
+.submit:hover{
+    color: white;
+    background: rgb(150, 20, 20);
+    transition: all 0.5s ease-in-out;
+}
+#container {
+    float: left;
+}
+#container2 {
+    float: left;
+}
+
