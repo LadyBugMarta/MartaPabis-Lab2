@@ -7,6 +7,7 @@ document.querySelector('#channel3Rec').addEventListener('click', btnChannel3Clic
 document.querySelector('#channel3Play').addEventListener('click', playChannel3)
 document.querySelector('#channel4Rec').addEventListener('click', btnChannel4Click)
 document.querySelector('#channel4Play').addEventListener('click', playChannel4)
+document.querySelector('#channel5Rec').addEventListener('click', btnChannel5Click)
 document.querySelector('#channel5Play').addEventListener('click', playChannel5)
 
 let channel1Start // declaring a variable
@@ -160,14 +161,16 @@ function btnChannel4Click() { // Start recording Channel 4
     channel4Start = Date.now() 
     activeChannel = 3
 }
+function btnChannel5Click(){ // Recording all channels
+    btnChannel1Click()
+    btnChannel2Click()
+    btnChannel3Click()
+    btnChannel5Click()
+}
 
 function playChannel5(){ // Playing all channels
     playChannel1()
-    DisableRec()
     playChannel2()
-    DisableRec()
     playChannel3()
-    DisableRec()
     playChannel4()
-    DisableRec()
 }
