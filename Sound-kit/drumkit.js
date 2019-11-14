@@ -15,12 +15,9 @@ let channel2Start
 let channel3Start
 let channel4Start
 
-const channel1 = [] // declaring an empty array
-const channel2 = [] 
-const channel3 = [] 
-const channel4 = [] 
+const channels = [[ ],[ ],[ ],[ ]] // declaring an empty array
 
-let activeChannel = -1;
+let activeChannel = null
 
 const sounds = {
     KeyQ: '#boom',
@@ -51,12 +48,12 @@ const sounds = {
     KeyN: '#mf'
 }
 
-
 function onKeyPress(e) { // find sound after click
     playSound(sounds[e.code]);
 
-    if(activeChannel === -1)
-    return
+    if(activeChannel === null) {
+        return
+    }
 
     if(activeChannel === 0) {
     const time = Date.now() - channel1Start;
@@ -64,7 +61,7 @@ function onKeyPress(e) { // find sound after click
         sound: e.code,
         time: time
         }
-        channel1.push(sound) // add element at the end of the array
+        channels[0].push(sound) // add element at the end of the array
     }
     if(activeChannel === 1) {
         const time = Date.now() - channel2Start;
@@ -72,7 +69,7 @@ function onKeyPress(e) { // find sound after click
             sound: e.code,
             time: time
         }
-        channel2.push(sound) 
+        channels[1].push(sound) 
     }
     if(activeChannel === 2) {
         const time = Date.now() - channel3Start;
@@ -80,7 +77,7 @@ function onKeyPress(e) { // find sound after click
             sound: e.code,
             time: time
         }
-        channel3.push(sound) 
+        channels[2].push(sound) 
     }
     if(activeChannel === 3) {
         const time = Date.now() - channel4Start;
@@ -88,48 +85,44 @@ function onKeyPress(e) { // find sound after click
             sound: e.code,
             time: time
         }
-        channel4.push(sound) 
+        channels[3].push(sound) 
     }
 }
 
 function DisableRec(){
-    activeChannel = -1
+    activeChannel = null
 }
 
-// channel 1
 function playChannel1() { // Start playing Channel 1
     DisableRec()
-    channel1.forEach((el) => {
+    channels[0].forEach((el) => {
         setTimeout(() => { // run function after time
             playSound(sounds[el.sound])
         }, el.time);
     })
 }
 
-// channel 2
 function playChannel2() { // Start playing Channel 2
     DisableRec()
-    channel2.forEach((el) => {
+    channels[1].forEach((el) => {
         setTimeout(() => { // run function after time
             playSound(sounds[el.sound])
         }, el.time);
     })
 }
 
-// channel 3
 function playChannel3() { // Start playing Channel 3
     DisableRec()
-    channel3.forEach((el) => {
+    channels[2].forEach((el) => {
         setTimeout(() => { // run function after time
             playSound(sounds[el.sound])
         }, el.time);
     })
 }
 
-// channel 4
 function playChannel4() { // Start playing Channel 4
     DisableRec();
-    channel4.forEach((el) => {
+    channels[3].forEach((el) => {
         setTimeout(() => { // run function after time
             playSound(sounds[el.sound])
         }, el.time);
@@ -161,6 +154,7 @@ function btnChannel4Click() { // Start recording Channel 4
     channel4Start = Date.now() 
     activeChannel = 3
 }
+
 function btnChannel5Click(){ // Recording all channels
     btnChannel1Click()
     btnChannel2Click()

@@ -1,9 +1,9 @@
 body{
     background-image: url(green_cup.png);
+    /* Background pattern from Toptal Subtle Patterns */
 }
 div{
     background: rgb(235, 212, 164);
-    /* Background pattern from Toptal Subtle Patterns */
     color: rgb(66, 66, 66);
     margin: 10px 100px;
     padding: 20px 50px;
@@ -19,6 +19,10 @@ h1{
 h1:hover{
     color: rgb(150, 20, 20);
     text-decoration: underline;
+}
+h1::selection{
+    background: palevioletred;
+    color:white;
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
