@@ -7,14 +7,13 @@ div{
     color: rgb(66, 66, 66);
     margin: 10px 100px;
     padding: 20px 50px;
-    
 }
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    margin: 60px;
+    padding: 20px 50px;
     color: rgb(186, 40, 40);
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
 }
 h1:hover{
     color: rgb(150, 20, 20);
@@ -27,8 +26,7 @@ h1::selection{
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     color: rgb(186, 40, 40);
-    font-size: 20px;
-    text-indent: 100px;
+    text-indent: 80px;
 }
 p::selection{ 
     background: palevioletred;
@@ -41,9 +39,9 @@ p::selection{
     border-radius: 20px;
     border: 2px solid rgb(150, 20, 20);
     border-style: outset;
-    padding: 10px 0px;
-    width: 100px;
-    margin: 10px 2px;
+    padding: 10px 10px;
+    width: 120px;
+    margin: 5px
 }
 .submit:hover{
     color: white;
@@ -56,4 +54,6 @@ p::selection{
 #container2 {
     float: left;
 }
-
+img{
+    margin: 10px 0px;
+}
