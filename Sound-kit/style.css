@@ -6,7 +6,7 @@ div{
     background: rgb(235, 212, 164);
     color: rgb(66, 66, 66);
     margin: 10px 100px;
-    padding: 20px 50px;
+    padding: 10px 0px;
 }
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -48,12 +48,11 @@ p::selection{
     background: rgb(150, 20, 20);
     transition: all 0.5s ease-in-out;
 }
-#container {
-    float: left;
-}
-#container2 {
-    float: left;
-}
 img{
     margin: 10px 0px;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
