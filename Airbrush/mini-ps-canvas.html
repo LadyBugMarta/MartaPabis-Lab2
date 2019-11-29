@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Airbrush</title>
+        <link rel="stylesheet" href="mini-ps-canvas.css">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+        
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+        <div id="header">
+            <h1>`BB-8 ${airbrush}`</h1>
+            <img src="loading.svg" title="{reload}" width="30" id="btnReload" class="svg">
+        </div>
+          <div class="container">
+              <button id="btnDimmed" class="dark" title="{dimmed}">Dimmed</button>
+              <button id="btnLighten" class="dark" title="{brighten">Brighten</button>
+              <button id="btnContrast" class="dark" title="{contrast}">Contrast</button>   
+              <button id="btnBlur" class="dark" title="{blur}">Blur</button>
+              <button id="btnBlack" class="dark" title="{grayscale}">Grayscale</button>
+            </div>
+          <div class="container">
+              <button id="btnSaturation" class="dark" title="{saturation}">Saturation</button>   
+              <button id="btnInvert" class="dark" title="{invert}">Invert</button>
+              <button id="btnSepia" class="dark" title="{sepia}">Sepia</button>
+              <button id="btnOpacity" class="dark" title="{opacity}">Opacity</button>
+              <button id="btnClear" class="dark" title="{clear}">Clear</button>
+          </div>
+          <div id="sliderContainer">
+              <img src="feather.svg" title="{square}" width="40" id="btnSquare" class="svg">
+              <img src="line.svg" title="{circle}" width="40" id="btnCircle" class="svg">
+              <label id="colorPicker"><input type="color" id="color" title="{color}"></label>
+              <input type="range" id="rangeSlider" title="{opacity}" min="0" max="100" value="0" step="1">
+              <label class="switch"><input type="checkbox"><span class="slider round" id="btnRed" title="{red}"></span></label>
+              <label class="switch"><input type="checkbox"><span class="slider round" id="btnGreen" title="{green}"></span></label>
+              <label class="switch"><input type="checkbox"><span class="slider round" id="btnBlue" title="{blue}"></span></label>
+          </div>
+          <div id="changePhoto"><input id="file" type="file" accept="image/*,.pdf"></div>
+          <div id="reactions"><img src="react.gif" alt="reactions" width="300"></div>
+          <canvas id="canvas" width="390" height="550"></canvas>
+
+        <script src="photoshop.js"></script>
+        <script src="mini-ps-canvas.js"></script>
+
+  </body>
+</html>
+
+
+
