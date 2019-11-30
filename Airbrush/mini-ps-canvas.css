@@ -63,6 +63,7 @@ canvas{
     letter-spacing: 0.8px;
     margin: 2px 2px;
     background: black;
+    cursor: pointer;
 }
 .svg{
     cursor: pointer;
@@ -165,4 +166,5 @@ input:checked + .slider:before {
     height: 35px;
     width: 35px;
     margin: 0px 5px;
+    cursor: pointer;
 }
