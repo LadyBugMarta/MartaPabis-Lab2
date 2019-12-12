@@ -1,4 +1,3 @@
-// TODO: KISS - Keep it simple stupid 
 document.addEventListener('DOMContentLoaded', appStart)
 
 let ctx 
@@ -45,7 +44,6 @@ function drawImage(img, x, y) {
 
 function reload(){
     window.location.reload()
-    alert('Do you want refresh the page?')
 }
 
 document.querySelector('#file').addEventListener('change', function (e) { 
