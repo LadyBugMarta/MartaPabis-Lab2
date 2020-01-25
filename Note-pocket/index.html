@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1> Notes app </h1>
+        <h2>Take a note & never forget</h2>
+    </header>
+
+    <form id="note-form">
+        <input id="note-title" placeholder="Title" required>
+        <textarea id="note-content" placeholder="Take your note here." required></textarea>
+        <button id="btn-create-note" onclick="scrollWin()">CREATE NOTE</button>
+        <input type="color" id="color" value="#ee0000" list="reds">
+            <datalist id="reds">
+              <option>#ff0000</option>
+              <option>#cc0000</option>
+              <option>#990000</option>
+              <option>#660000</option>
+              <option>#330000</option>
+              <option>red</option> 
+              <option>#F00</option> 
+            </datalist>
+    </form>
+    <h1><i class="fas fa-arrow-down"></i> Place for Your notes: </h1>
+
+    <div id="search-box">
+    <input type="text" placeholder="Type to search" id="text-search">
+    <i class="fas fa-search"></i>
+    </div>
+
+    <div id="note-list"></div>
+
+</body>
+<script src="main.js"></script>
+</html>

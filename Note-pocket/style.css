@@ -1,0 +1,148 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 2000px;
+}
+.header{
+    padding: 5px 0 0 0;
+}
+h1, h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+h1:hover{
+    color: #80c342;
+    transition: all 0.5s ease-in-out;
+}
+h2:hover{
+    color: #80c342;
+    transition: all 0.5s ease-in-out;
+}
+*::selection{
+    background: black;
+    color: white;
+}
+#note-form{ 
+    margin: 30px auto;
+    width: 600px;
+    height: 470px;
+    padding: 2em 4em;
+    box-shadow: 5px 15px 20px #dfdfdf;
+    resize: both;
+    overflow: auto;
+}
+#note-form:hover{
+    box-shadow: 5px 15px 20px #cecccc;
+}
+#note-form input{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    opacity: 0.4;
+    width: 100%;
+}
+#note-form input:focus{
+    opacity: 1;
+}
+#note-form textarea{
+    display: block;
+    border: none;
+    height: 280px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.5;
+    padding: 1em 0;
+    border-top: 1px solid #dfdfdf;
+    width: 100%;
+}
+#note-form textarea:focus{
+    opacity: 1;
+}
+#btn-create-note{ 
+    width: 240px;
+    height: 40px;
+    line-height: 35px;
+    background: #121212;
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    font-size: 16px;
+    display: block; 
+    float: right;
+    margin: 10px 0;
+}
+#btn-create-note:hover{ 
+    color: black;
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+#note-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.note-list-notes{
+    width: 400px;
+    min-height: 200px;
+    height: auto;
+    margin: 40px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #dfdfdf;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+.note-list-delete{
+    text-align: right;
+    margin: 2px;
+}
+i:hover{
+    transform: scale(1.2);
+}
+.note-list-date{
+    text-align: right;
+}
+.note-list-title{
+    text-align: center;
+    font-weight: 800;
+}
+input[type="color"] {
+    background: transparent;
+    cursor: pointer;
+    padding: 0px;
+}
+#search-box{
+    box-shadow: 5px 5px 5px #dfdfdf;
+    margin: 20px auto;
+    display: flex;
+    width: 260px;
+    height: 35px;
+    border-radius: 20px;
+}
+#search-box:hover{
+    box-shadow: 5px 5px 5px #cecccc;
+}
+#text-search{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.5;
+    text-align: center;
+    width: 220px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#text-search:focus{
+    background: black;
+    color: white;
+    transition: all 0.8s ease-in-out;
+}
+.fa-search{
+    margin: auto;
+    display: flex;
+    opacity: 50%;
+}
