@@ -1,0 +1,16 @@
+body{
+    background-color: teal;
+}
+h1, h2{
+    color: rgb(44, 204, 188);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+canvas{
+    background: rgb(44, 204, 188);
+    display: flex;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgb(49, 170, 158);
+}
